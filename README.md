@@ -59,11 +59,11 @@ yarn start
 
 这个时候，项目应该会在如下网址运行
 
-<img src="images/frontend_1.png" style="width:500px;display:block; float:left">
+<img src="images/frontend_1.png" style="width:500px;display:block; float:left" width=500>
 
 2. 直接在网页中打开，效果如下
 
-<img src="images/frontend_2.png" style="width:300px;display:block; float:left">
+<img src="images/frontend_2.png" style="width:300px;display:block; float:left" width=500>
 
 3. 执行到上面的步骤之后，需要到server目录下执行服务端代码
 
@@ -74,7 +74,7 @@ yarn start
 
 运行完之后，控制台会打印出对应的端口号
 
-<img src="images/backend_1.png" style="width:250px;display:block; float:left">
+<img src="images/backend_1.png" style="width:250px;display:block; float:left" width=250>
 
 此时可以访问`http://localhost:3001`进行确认服务端是否运行正常，如果页面中出现`access success`，说明可以访问，服务端正常运行
 
@@ -97,13 +97,14 @@ yarn start
    > 在`http://localhost:3000`(非其他局域网ip地址访问网页)条件下，可以使用语音视频功能
 
 <div style="width:100%;display:flex;flex-flow:row wrap; align-content:space-between; padding:10px"}>
-<img src="images/frontend_3.png" style="width:300px;margin:10px">
-<img src="images/frontend_4.png" style="width:300px;margin:10px">
-<img src="images/frontend_5.png" style="width:300px;margin:10px">
-<img src="images/frontend_6.png" style="width:300px;margin:10px">
-<img src="images/frontend_7.png" style="width:300px;margin:10px">
-<img src="images/frontend_8.png" style="width:300px;margin:10px">
+<img src="images/frontend_3.png" style="width:300px;margin:10px" width=500>
+<img src="images/frontend_4.png" style="width:300px;margin:10px" width=500>
+<img src="images/frontend_5.png" style="width:300px;margin:10px" width=500>
+<img src="images/frontend_6.png" style="width:300px;margin:10px" width=500>
+<img src="images/frontend_7.png" style="width:300px;margin:10px" width=500>
+<img src="images/frontend_8.png" style="width:300px;margin:10px" width=500>
 </div>
+
 
 #### 运行于https环境
 
@@ -122,16 +123,17 @@ yarn https
 
    进入客户端或者服务端界面的时候都有可能出现下面的情况，请选择`advanced`中的`continue`
 
-   <img src="images/frontend_9.png" style="width:300px;margin:10px">
+   <img src="images/frontend_9.png" style="width:300px;margin:10px"  width=500>
 
 4. 建议在本地端发送数据给第二台设备(视频不太稳定)
 
 <div style="width:100%;display:flex;flex-flow:row wrap; align-content:space-between; padding:10px"}>
-<img src="images/frontend_10.png" style="width:300px;margin:10px">
-<img src="images/frontend_11.png" style="width:300px;margin:10px">
-<img src="images/frontend_12.png" style="width:300px;margin:10px">
-<img src="images/frontend_13.png" style="width:300px;margin:10px">
+<img src="images/frontend_10.png" style="width:300px;margin:10px"  width=500>
+<img src="images/frontend_11.png" style="width:300px;margin:10px"  width=500>
+<img src="images/frontend_12.png" style="width:300px;margin:10px"  width=500>
+<img src="images/frontend_13.png" style="width:300px;margin:10px"  width=500>
 </div>
+
 ### 演示效果
 
 <img src="./images/demo_1.gif" width=500>
