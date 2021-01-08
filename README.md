@@ -1,7 +1,5 @@
 ## chat-room
 
-> 源码尚未公开，课程之后将会开源
-
 ### 说明
 
 本项目灵感来自交大x字节跳动的公开课，样式参考其`demo`[^1]，但本项目采用`React`[^2]所写，UI组件使用`Antd`[^3]
@@ -49,23 +47,23 @@ yarn start
 
 > 在该条件下，可以运行绝大多数的功能，除发送语音&视频通话
 >
-> <span style="color: red">也可以使用安装包进行安装，服务端操作同下</span>
+> <span style="color: red">也可以使用[安装包](https://github.com/junhaideng/chat-room/releases)进行安装，服务端操作同下</span>
 
 1. 进入到客户端目录下(含`package.json`)，执行下面的操作
 
 ```bash
 # 建议使用yarn
-yarn install
+yarn install --production # 如需打包，运行yarn install
 yarn start
 ```
 
 这个时候，项目应该会在如下网址运行
 
-<img src="images/frontend_1.png" style="width:500px;display:block; float:left" width=500>
+<img src="images/frontend_1.png" style="width:500px;display:block; float:left">
 
 2. 直接在网页中打开，效果如下
 
-<img src="images/frontend_2.png" style="width:300px;display:block; float:left" width=500>
+<img src="images/frontend_2.png" style="width:300px;display:block; float:left">
 
 3. 执行到上面的步骤之后，需要到server目录下执行服务端代码
 
@@ -76,7 +74,7 @@ yarn start
 
 运行完之后，控制台会打印出对应的端口号
 
-<img src="images/backend_1.png" style="width:250px;display:block; float:left" width=250>
+<img src="images/backend_1.png" style="width:250px;display:block; float:left">
 
 此时可以访问`http://localhost:3001`进行确认服务端是否运行正常，如果页面中出现`access success`，说明可以访问，服务端正常运行
 
@@ -107,7 +105,6 @@ yarn start
 <img src="images/frontend_8.png" style="width:300px;margin:10px" width=500>
 </div>
 
-
 #### 运行于https环境
 
 > 该环境下支持使用所有功能，视频聊天需要使用多个设备(本地两个网页也可)进行测试，在这里说明局域网配置
@@ -125,7 +122,7 @@ yarn https
 
    进入客户端或者服务端界面的时候都有可能出现下面的情况，请选择`advanced`中的`continue`
 
-   <img src="images/frontend_9.png" style="width:300px;margin:10px"  width=500>
+   <img src="images/frontend_9.png" style="width:300px;margin:10px">
 
 4. 建议在本地端发送数据给第二台设备(视频不太稳定)
 
@@ -135,7 +132,6 @@ yarn https
 <img src="images/frontend_12.png" style="width:300px;margin:10px"  width=500>
 <img src="images/frontend_13.png" style="width:300px;margin:10px"  width=500>
 </div>
-
 ### 演示效果
 
 <img src="./images/demo_1.gif" width=500>
@@ -152,11 +148,27 @@ yarn https
 
 <img src="./images/chatroom_1.png" width=500>
 
-文本，文件，语音只不过发送的数据类型不同罢了，`socket.io`支持二进制文件的发送，那么由它转发即可，不过要注意设置好缓冲大小，否则容易断开连接
+
+
+文本，文件，语音只不过发送的数据类型不同罢了，`socket.io`支持二进制文件的发送，那么由它转发即可，不过注意设置好缓冲大小，否则容易断开连接
 
 音视频通话使用`WebRTC`[^4]，用户A先请求用户B可否进行通话，如果可以，然后在使用`RTCPeerConnection`进行连接，将`stream`加到对应的`video`元素上即可，实际上本项目采用的有两次下面的过程，一次是为了确认用户是否同意，另一次才是实际连接的建立
 
 <img src="./images/chatroom_2.png" width=400>
+
+### docker 运行
+在client 目录下
+```bash
+docker build -t=chat-client .
+docker run -p 3001:3001 --name client chat-client
+```
+
+在server 目录下
+```bash
+docker build -t=chat-server .
+docker run -p 3001:3001 --name server chat-server
+```
+创建成功之后，可在本地进行预览
 
 ### 局限
 
