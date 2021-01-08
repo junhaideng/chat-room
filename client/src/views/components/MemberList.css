@@ -1,0 +1,58 @@
+/*群聊好友列表*/
+.chat-room-group-members {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chat-room-group-members::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.chat-room-group-members::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(240, 240, 240, 0);
+    border-radius: 10px;
+    background-color: rgba(0, 89, 255, 0);
+}
+
+/*每一个群聊或者好友*/
+.chat-room-group-members-item {
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+}
+
+.chat-room-group-members-item.active {
+    background-color: #f2f2f2;;
+}
+
+.chat-room-group-members-item.active:after {
+    background-color: #b2e281;
+}
+
+.chat-room-group-members-item.active:after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 2px;
+    bottom: 2px;
+    width: 2px;
+}
+
+.chat-room-group-members-item-avatar {
+    display: block;
+    width: 20px;
+    float: left;
+}
+
+.chat-room-group-members-item-avatar img {
+    width: 100%;
+}
+
+.chat-room-group-members-item-info {
+    margin-left: 10px;
+    display: inline-block;
+}

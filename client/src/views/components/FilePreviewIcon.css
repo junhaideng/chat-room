@@ -1,0 +1,30 @@
+.chat-room-message-editor-preview {
+    margin-top: 20px;
+    min-width: 50%;
+    width: 200px;
+    position: relative;
+    height: 66px;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+.chat-room-message-editor-preview-icon {
+    font-size: 30px;
+    display: inline-block;
+}
+
+.chat-room-message-editor-preview-filename {
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.chat-room-message-editor-preview-delete {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: 10px;
+}

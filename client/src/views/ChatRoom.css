@@ -1,0 +1,114 @@
+/*electron js 上*/
+.chat-room {
+    width: 100%;
+    height: 100%;
+    transition: width, height 1s ease-out;
+}
+
+/*@media screen and (max-height: 500px) {*/
+/*    .chat-room {*/
+/*        width: 600px;*/
+/*        height: 450px;*/
+/*        position: absolute;*/
+/*        top: calc((100% - 450px) / 2);*/
+/*        left: calc((100% - 600px) / 2);*/
+/*        border: 1px solid #d1d1d1;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 800px) {*/
+/*    .chat-room {*/
+/*        width: 600px;*/
+/*        height: 450px;*/
+/*        position: absolute;*/
+/*        top: calc((100% - 450px) / 2);*/
+/*        left: calc((100% - 600px) / 2);*/
+/*        border: 1px solid #d1d1d1;*/
+/*    }*/
+/*}*/
+
+
+/*电脑上*/
+@media screen and (min-width: 900px) {
+    .chat-room {
+        width: 800px;
+        height: 600px;
+        top: calc((100% - 600px) / 2);
+        position: absolute;
+        left: calc((100% - 800px) / 2);
+        border: 1px solid #d1d1d1;
+    }
+}
+
+/*左边侧边栏*/
+.chat-room-sidebar {
+    background-color: #26292e;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    width: 80%;
+}
+
+/*侧边栏右边部分*/
+.chat-room-container {
+    height: 100%;
+    background-color: #eeeeee
+}
+
+/*用户头像*/
+.chat-room-avatar {
+    display: block;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-room-username {
+    font-size: 1.2vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*其他菜单*/
+.chat-room-menu {
+    display: block;
+    border: none;
+}
+
+/*群聊或者好友显示*/
+.chat-room-group {
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid #d1d1d1;
+}
+
+/*搜索*/
+.chat-room-search {
+    padding: 10px;
+}
+
+/*搜索框*/
+.chat-room-input {
+    border: none;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: #606266;
+    outline: none;
+}
+
+.chat-room-logout {
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    text-align: center;
+}
+

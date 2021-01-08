@@ -1,0 +1,46 @@
+.chat-room-video-container {
+    height: 100%;
+    width: 100%;
+}
+
+.chat-room-video-main {
+    width: 600px;
+}
+
+.chat-room-video-minor {
+    position: absolute;
+    width: 180px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .chat-room-video-main {
+        width: 100%;
+    }
+
+    .chat-room-video-minor {
+        position: absolute;
+        width: 30%;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .chat-room-video-button {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+
+.chat-room-video-button {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+}

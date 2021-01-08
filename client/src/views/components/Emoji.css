@@ -1,0 +1,17 @@
+.chat-room-emoji-list {
+    width: 290px;
+    list-style: none;
+    display: inline-block;
+}
+
+.chat-room-emoji-list-item {
+    padding: 2px;
+    width: 26px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.chat-room-emoji-list-item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

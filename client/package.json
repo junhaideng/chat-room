@@ -1,0 +1,90 @@
+{
+  "name": "chatroom",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "homepage": ".",
+  "author": {
+    "name": "Edgar",
+    "url": "https://github.com/junhaideng"
+  },
+  "description": "homework for computer network, all right reserved, open source later after the course",
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.8.2",
+    "file-saver": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-draggable": "^4.4.3",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "redux": "^4.0.5",
+    "socket.io-client": "^3.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "REACT_APP_HTTP=true react-scripts start",
+    "https": "REACT_APP_HTTPS=true HTTPS=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "cn.edgar",
+    "asar": true,
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis"
+        }
+      ],
+      "icon": "build/favicon256.ico",
+      "asarUnpack": [
+        "src/**",
+        "README.md"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
+  }
+}
