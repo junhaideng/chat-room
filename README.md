@@ -160,7 +160,7 @@ yarn https
 在client 目录下
 ```bash
 docker build -t=chat-client .
-docker run -p 3001:3001 --name client chat-client
+docker run -p 3000:3000 --name client chat-client
 ```
 
 在server 目录下
