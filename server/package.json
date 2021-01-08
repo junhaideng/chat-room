@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "chat server",
+  "author": "Edgar",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/http.js",
+    "https":"node ./src/https.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.1",
+    "sqlite3": "^5.0.0"
+  }
+}
